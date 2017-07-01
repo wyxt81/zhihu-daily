@@ -20,6 +20,7 @@
 	import axios from 'axios';
 	import router from '../router';
 	import { Indicator } from 'mint-ui';
+	// import {mapMutations} from 'vuex';
 	export default {
 		data() {
 			return {
@@ -107,7 +108,7 @@
 					// 合并数据
 					let stories = response.data.stories;
 					let ids = stories.map(story => story.id);
-
+					// dispatch对应的都是actions里的方法
 					this.$store.dispatch('addNews', {
 						stories: stories,
 						ids: ids
