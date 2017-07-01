@@ -14,7 +14,7 @@ mint-ui + less + flex
 ## 项目运行
 ```bash
 # 克隆项目到本地
-git clone https://github.com/cccyb/vue-zhihu-daily.git
+git clone https://github.com/wyxt81/zhihu-daily.git
 
 # 切换到项目所在文件夹
 cd vue-zhihu-daily
@@ -94,7 +94,7 @@ npm run build
 
 ## 总结
 ### 1.知乎接口跨域问题（开发环境）
-调用知乎API时遇到了跨域问题，但是知乎的接口好像不支持jsonp，谷歌一波发现可以使用vue-cli自带的config的proxyTable文件配置进行解决，配置非常简单：
+调用知乎API时遇到了跨域问题，但发现可以使用vue-cli自带的config的proxyTable文件配置进行解决，配置非常简单：
 
 ```js
 proxyTable: {
